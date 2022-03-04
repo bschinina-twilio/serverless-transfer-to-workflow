@@ -62,18 +62,16 @@ exports.handler = async function(context, event, callback) {
         console.log(`Transferring customer call ${callSid} with new TwiML ${twiml.toString()}`);
 
         //update the call resource to the new twiml
-        try {
-            await client.calls(callSid).update({ twiml: twiml.toString() })
-                      .then(()=> {
-                        console.log(`Transfer success.`);
-                        return callback(null, response);
-                      })
-        }
-        catch(error){
-            console.log(`ERROR with ${taskSid}: ${error.message}`);
-            response.setStatusCode(500); //update error status
-            return callback(null, response);
-        }
+        await client.calls(callSid).update({ twiml: twiml.toString() })
+                  .then(()=> {
+                    console.log(`Transfer success.`);
+                    return callback(null, response);
+                  })
+                  .catch((e) => {
+                       console.log(`ERROR creating new transfer task for ${taskSid}: ${error.message}`);
+                       response.setStatusCode(500); 
+                       return callback(null, response);
+                  });
     }
     else {
         return callback(null, response);
