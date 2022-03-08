@@ -27,17 +27,17 @@ This solution will also set a Task Attribute on the transferred Task (Task B) to
 ### Environment Variables
 1. Create Environment Variables for each of your TaskQueues.   
     For example:   
-        EVERYONE_QUEUE_NAME = “Everyone”  
+        >EVERYONE_QUEUE_NAME = “Everyone”  
 
 2. Create Environment Variables for each of your Workflows involved with Transfers.    
     For example:    
-        EVERYONE_WORKFLOW_SID = “WWxxxxxxxxxx”   
+        >EVERYONE_WORKFLOW_SID = “WWxxxxxxxxxx”   
         
 3. Determine which Workflow should be selected for each of the Task Queues available for transferring.
     For example, if we had 3 queues, they would each need to be mapped to a Workflow.     
-        Everyone Queue -> Everyone Workflow   
-        Spanish Queue -> Spanish Workflow   
-        English Queue -> English Workflow   
+        >Everyone Queue -> Everyone Workflow   
+        >Spanish Queue -> Spanish Workflow   
+        >English Queue -> English Workflow   
 
 ### Deploy Function
 
