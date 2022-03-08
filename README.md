@@ -29,7 +29,7 @@ This solution will also set a Task Attribute on the transferred Task (Task B) to
     For example:   
         EVERYONE_QUEUE_NAME = “Everyone”  
 
-2. Create ENvironment Variables for each of your Workflows involved with Transfers.    
+2. Create Environment Variables for each of your Workflows involved with Transfers.    
     For example:    
         EVERYONE_WORKFLOW_SID = “WWxxxxxxxxxx”   
         
@@ -45,7 +45,7 @@ Follow steps in this documentation to build and deploy your Serverless Function:
 https://www.twilio.com/docs/runtime/functions
 
 ### TaskRouter Workspace Event Callback URL
-Set the URL generated from deploying the Function in step #2 as the [TaskRouter Workspace Event Callback URL](https://www.twilio.com/docs/taskrouter/api/workflow) so it can consume events from TaskRouter in real-time. 
+Set the URL generated from deploying the Function in the previous step as the [TaskRouter Workspace Event Callback URL](https://www.twilio.com/docs/taskrouter/api/workflow), so it can consume events from TaskRouter in real-time. 
 
 ## Disclaimer
 This software is to be considered "sample code", a Type B Deliverable, and is delivered "as-is" to the user. Twilio bears no responsibility to support the use or implementation of this software.
