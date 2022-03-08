@@ -29,9 +29,9 @@ This solution will also set a Task Attribute on the transferred Task (Task B) to
     For example:
         EVERYONE_QUEUE_NAME = “Everyone”
 
-2. Create ENvironment Variables for each of your Workflows involved with Transfers. 
-    For example:
-        EVERYONE_WORKFLOW_SID = “WWxxxxxxxxxx”
+2. Create ENvironment Variables for each of your Workflows involved with Transfers.   
+    For example:   
+        EVERYONE_WORKFLOW_SID = “WWxxxxxxxxxx”  
         
 3. Determine which Workflow should be selected for each of the Task Queues available for transferring.
     For example, if we had 3 queues, they would each need to be mapped to a Workflow.
