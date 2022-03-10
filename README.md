@@ -5,6 +5,7 @@ Twilio Flex solution to allow transferred Voice Tasks to re-route through a Task
 
 ### Why was this created?
 By default, Flex will **NOT** route transferred Tasks through a Workflow. When a Task is transferred, it will route directly to the AGENT or QUEUE selected in the WorkerDirectory component. No further routing logic will be applied. 
+
 ![image](https://user-images.githubusercontent.com/67924770/157151805-3db3402d-5360-4f1c-9b8c-8e4be789cc23.png)
 
 This becomes a concern when a Queue has no available agents and will not have any available agents for the foreseeable future, like a department that closes for the weekends. A caller transferred to a Queue with no available agents will wait on the line until an agent becomes available or until it reaches the Twilio Voice limit of 24 hours.
