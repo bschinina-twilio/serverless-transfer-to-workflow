@@ -25,6 +25,12 @@ This solution will also set a Task Attribute on the transferred Task (Task B) to
 
 ## Setup Requirements
 
+### Dependency
+
+Ensure the "twilio" library depencency in your Function Service is set to `*` so you are using the most recent version of the Twilio Node helper library.
+
+This solution does not work with `twilio` version 3.29.1 (default version in new Function Services created from the Twilio Console). If you created a new Service to test this, you will need to upgrade the version of the library.
+
 ### Environment Variables
 1. Create Environment Variables for each of your TaskQueues.   
     For example:   
